@@ -34,6 +34,7 @@ namespace ConsoleApplicationNyFerie
             {
                 Console.WriteLine(ex.Message);
                 throw;
+
             }
         }
     }
