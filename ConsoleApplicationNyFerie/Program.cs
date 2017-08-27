@@ -18,7 +18,16 @@ namespace ConsoleApplicationNyFerie
             
             foreach (var person in listeClass)
             {
+                if (person.Alder <= 22)
+                {
+                    person.Navn = "1.års elev " + person.Navn;
+                }
+                else if (person.Alder >= 23)
+                {
+                    person.Navn = "2.års elev " + person.Navn;
+                }
                 string elev = person.Person(person);
+                
                 Console.WriteLine($"Denne {elev}");
             }
 

@@ -28,7 +28,7 @@ namespace ConsoleApplicationNyFerie
         }
         public string Person(Class1 personer)
         {
-            string navnet = "Elev " + personer.Navn;
+            string navnet = personer.Navn;
             string alder = " er " + personer.Alder + " år gamle";
             string personen = navnet + alder + " Den " + personer.Dato;
             return personen;
